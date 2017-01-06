@@ -17,6 +17,19 @@
 <items 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 			xsi:noNamespaceSchemaLocation="items.xsd">
 
+	<enumtypes>
+		<enumtype code="StadiumType" autocreate="true" generate="true" dynamic="false">
+			<value code="openair"/>
+			<value code="enclosed"/>
+		</enumtype>
+		<enumtype code="StadiumAccess" autocreate="true" generate="true" dynamic="true">
+			<value code="road"/>
+			<value code="rail"/>
+			<value code="plane"/>
+		</enumtype>
+	</enumtypes>
+
+
 	<relations>
 		<relation code="StadiumMatchRelation" localized="false" generate="true" autocreate="true">
 			<sourceElement type="Stadium" qualifier="stadium" cardinality="one" />
