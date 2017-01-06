@@ -50,6 +50,10 @@
 					<description>Capacity</description>
 					<persistence type="property" />
 				</attribute>
+				<attribute type="StadiumType" qualifier="StadiumType">
+					<persistence type="property"/>
+					<defaultvalue>em().getEnumerationValue("StadiumType","openair")</defaultvalue>
+				</attribute>
 			</attributes>
 		</itemtype>
 
