@@ -19,6 +19,9 @@
       <sourceFolder url="file://$MODULE_DIR$/web/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/testsrc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gensrc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hmc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hmc/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="module" module-name="platform" />
