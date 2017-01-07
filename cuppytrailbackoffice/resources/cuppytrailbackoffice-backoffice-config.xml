@@ -39,5 +39,24 @@
       </y:labels>
     </y:base>
   </context>
+  <!--Configuring the Search Area-->
+  <!--simple mode-->
+  <context type="Stadium" component="simple-search">
+    <yss:simple-search xmlns:yss="http://www.hybris.com/cockpitng/config/simplesearch">
+      <yss:field name="code"/>
+      <yss:sort-field name="capacity" asc="true"/>
+    </yss:simple-search>
+  </context>
+  <!--advanced mode-->
+  <context type="Stadium" component="advanced-search">
+    <as:advanced-search xmlns:as="http://www.hybris.com/cockpitng/config/advancedsearch" connection-operator="AND">
+      <as:field-list>
+        <as:field name="code" operator="contains" selected="true"/>
+        <as:field name="StadiumType" selected="true"/>
+        <as:field editor="java.lang.Long" name="pk" operator="equal" selected="false" sortable="false"/>
+      </as:field-list>
+      <as:sort-field name="code" asc="false" />
+    </as:advanced-search>
+  </context>
 
 </config>
