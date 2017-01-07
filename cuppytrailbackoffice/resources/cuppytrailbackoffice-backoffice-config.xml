@@ -59,4 +59,29 @@
     </as:advanced-search>
   </context>
 
+  <!--Configuring the Editor Area-->
+  <context component="editor-area" type="Stadium">
+    <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+      <editorArea:tab name="essentials">
+        <editorArea:section name="essentials">
+          <editorArea:attribute qualifier="code"/>
+          <editorArea:attribute qualifier="StadiumType"/>
+        </editorArea:section>
+        <editorArea:section name="data">
+          <editorArea:attribute qualifier="capacity"/>
+          <editorArea:attribute qualifier="matches"/>
+        </editorArea:section>
+        <editorArea:section name="media">
+          <editorArea:attribute qualifier="stadiumImage"/>
+        </editorArea:section>
+      </editorArea:tab>
+      <editorArea:tab name="dates">
+        <editorArea:section name="dates">
+          <editorArea:attribute qualifier="creationtime"/>
+          <editorArea:attribute qualifier="modifiedtime"/>
+        </editorArea:section>
+      </editorArea:tab>
+    </editorArea:editorArea>
+  </context>
+
 </config>
