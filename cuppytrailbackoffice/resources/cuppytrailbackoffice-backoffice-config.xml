@@ -15,8 +15,12 @@
 
 	<!-- cuppytrailbackoffice UI configuration should be provided here -->
 
-	<!--<context component="component-code" module="cuppytrailbackoffice">-->
-		<!--Please check documentation for code snippets for specific components-->
-	<!--</context>-->
+  <context component="explorer-tree" merge-by="module">
+    <n:explorer-tree xmlns:n="http://www.hybris.com/cockpitng/config/explorertree">
+      <n:navigation-node id="Cuppytrail">
+        <n:type-node id="Stadiums" code="Stadium" />
+      </n:navigation-node>
+    </n:explorer-tree>
+  </context>
 
 </config>
