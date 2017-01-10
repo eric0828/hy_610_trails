@@ -116,4 +116,11 @@
 	<!--register the event listener, stadiumEventListener-->
 	<bean id="stadiumListener" class="de.hybris.platform.cuppytrail.events.StadiumEventListener" autowire="byName" />
 
+	<bean id="playerVoidInterceptorMapping" class="de.hybris.platform.servicelayer.interceptor.impl.InterceptorMapping">
+		<property name="interceptor" ref="VoidInterceptor" />
+		<property name="typeCode" value="Player" />
+		<property name="replacedInterceptors" ref="playerConfirmedInterceptor"/>
+	</bean>
+	<bean id="playerService" class="de.hybris.platform.cuppytrail.impl.CuppytrailPlayerService" />
+
 </beans>
