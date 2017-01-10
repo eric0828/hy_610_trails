@@ -105,5 +105,15 @@
 	</bean>
 
 	<bean id="sendRankingJob" class="de.hybris.platform.cuppytrail.jobs.SendRankingJob" autowire="byName"/>
-    
+
+	<!--Configure the spring bean for the interceptor-->
+	<bean id="stadiumCapacityInterceptor" class="de.hybris.platform.cuppytrail.interceptors.StadiumCapacityInterceptor"/>
+	<!--Map the interceptor to Stadium-->
+	<bean id="StadiumInterceptorMapping" class="de.hybris.platform.servicelayer.interceptor.impl.InterceptorMapping">
+		<property name="interceptor" ref="stadiumCapacityInterceptor" />
+		<property name="typeCode" value="Stadium" />
+	</bean>
+	<!--register the event listener, stadiumEventListener-->
+	<bean id="stadiumListener" class="de.hybris.platform.cuppytrail.events.StadiumEventListener" autowire="byName" />
+
 </beans>
