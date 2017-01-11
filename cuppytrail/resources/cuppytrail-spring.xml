@@ -123,4 +123,6 @@
 	</bean>
 	<bean id="playerService" class="de.hybris.platform.cuppytrail.service.impl.CuppytrailPlayerService" />
 
+	<bean id="matchService" class="de.hybris.platform.cuppytrail.service.impl.CuppytrailMatchService"/>
+
 </beans>
