@@ -1,4 +1,4 @@
-package de.hybris.platform.cuppytrail.impl;
+package de.hybris.platform.cuppytrail.service.impl;
 
 import de.hybris.platform.cuppy.model.PlayerModel;
 import de.hybris.platform.cuppy.services.impl.DefaultPlayerService;

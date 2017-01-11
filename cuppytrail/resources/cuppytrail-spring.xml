@@ -121,6 +121,6 @@
 		<property name="typeCode" value="Player" />
 		<property name="replacedInterceptors" ref="playerConfirmedInterceptor"/>
 	</bean>
-	<bean id="playerService" class="de.hybris.platform.cuppytrail.impl.CuppytrailPlayerService" />
+	<bean id="playerService" class="de.hybris.platform.cuppytrail.service.impl.CuppytrailPlayerService" />
 
 </beans>
